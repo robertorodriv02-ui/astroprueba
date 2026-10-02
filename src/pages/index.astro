@@ -24,7 +24,7 @@ export interface Product {
 }
 
 const products: ProductResponse = await fetch(
-  "http://127.0.0.1:8000/products/",
+  "http://127.0.0.1:8000/products/?skip=0&limit=100",
 ).then((res) => res.json());
 ---
 
